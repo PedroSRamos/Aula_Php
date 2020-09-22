@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial Verdana ;
+    font-size: 1em;
+}
+
+fieldset {
+    border: 0;
+}
+
+button {
+    width: 100%;
+}
+
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+input {
+    width: 100%;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: gray;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="url"], .campo input[type="number"], .campo input[type="tel"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 2px solid blue;
+    box-shadow: 2px 2px 2px black (0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: yellow;
+}
+
+.campo label.checkbox {
+    color: black ;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.botao {
+    font-size: 1em;
+    background:;
+    border: 0;
+    margin-bottom: 1em;
+    color:gray ;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px black (0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px black ( 0, 0, 0, 0.5);
+}
+
+.botao:hover {
+    background: yellow;
+    box-shadow: inset 2px 2px 2px black ( 0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.botao, select, label.checkbox {
+    cursor: pointer;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.topnav a:hover {
+    background-color: wheat;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: wheat;
+    color: white;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+table.blueTable {
+    border: 1px solid blueviolet;
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.blueTable td, table.blueTable th {
+    border: 1px solid mistyrose;
+    padding: 4px 6px;
+}
+
+table.blueTable tbody td {
+    font-size: 13px;
+}
+
+table.blueTable tr:nth-child(even) {
+    background: mistyrose;
+}
+
+table.blueTable thead {
+    background: gray;
+    border-bottom: 1px solid gray;
+}
+
+table.blueTable thead th {
+    font-size: 15px;
+    font-weight: normal;
+    color: mistyrose;
+}
+
+table.blueTable tfoot td {
+    font-size: 14px;
+}
+
+table.blueTable tfoot .links {
+    text-align: right;
+}
